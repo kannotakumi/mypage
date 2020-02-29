@@ -1,3 +1,11 @@
-.top-wrapper{
+.container {
 	color:red;
+}
+
+.top-wrapper{
+	padding-top:180px;
+	padding-bottom:100px;
+	background-image:url(backimage1.jpeg);
+	color:white;
+	background-size:cover;
 }
