@@ -1,11 +1,23 @@
-.container {
-	color:red;
+body {
+	margin: 0;
+	font-family: "Hiragino Kaku Gothic ProN";
+}
+a {
+	 text-decoration: none;
 }
 
+.container {
+	width:300px;
+	margin:0 auto;
+}
+
+.container h1{
+	color:red;
+}
 .top-wrapper{
 	padding-top:180px;
 	padding-bottom:100px;
-	background-image:url(https://github.com/kannotakumi/prog.github.io-test/image/backimage1.jpg);
-	color:white;
+	background-image:url(image/backimage1.jpg);
+	color:blue;
 	background-size:cover;
 }
