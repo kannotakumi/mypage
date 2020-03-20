@@ -16,7 +16,8 @@ a {
 
 
 .top-wrapper {
-	padding-top:180px;
+	height:100px;
+	padding-top:10px;
 	padding-bottom:100px;
 	background-image:url(image/backimage1.jpg);
 	background-size:cover;
@@ -27,12 +28,23 @@ a {
 .top-wrapper p{
 	color: white;
 }
-.my-profile {
+.my-profile, .my-code {
 	width:600;
 	padding: 0 15px;
 	margin: auto;
 }
-.my-profile h2{
-	width:300px;
+.my-profile h2, .my-code h2{
+	width:auto;
 	border-bottom: 5px solid red;
+}
+.link  {
+	font-color:white;
+	font-size:30px;
+	background: #fd9535;
+	border-radius:4px;
+	display:none;
+}
+
+.btn-active{
+	display:block;
 }
