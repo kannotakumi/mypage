@@ -37,14 +37,15 @@ a {
 	width:auto;
 	border-bottom: 5px solid red;
 }
-.link  {
+.btn  {
 	font-color:white;
 	font-size:30px;
 	background: #fd9535;
 	border-radius:4px;
-	display:none;
+	box-shadow: 0px 5px #808080;
 }
-
-.btn-active{
-	display:block;
+.btn:active {
+	position: relative;
+	top:5px;
+	box-shadow:none;
 }
