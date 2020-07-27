@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include<unistd.h>
+#define N 6
+#define K 100000
+
+int main(void){
+	int i;
+	int j;
+	int h;
+	int l = 0;
+	int count = 0;
+	int check = 0;
+	int dice[N];
+	srand((unsigned int)time(NULL));
+	while(l < K){	
+	    for(j = 0; j < N; j++){    
+		int s = rand() % 6 + 1;
+		dice[j] = s;
+	    }
+	    for(i = 0; i < N; i++){
+	    	printf("%d回目:%d ",i,dice[i]);
+	    }
+	    printf("\n");
+	    for(h = 1; h < N; h++){   
+		if(dice[0] == dice[h]){
+		check++;
+		}
+	    }
+	    printf("cheak=%d\n",check);
+	    if (check == 5){
+	    	count++;
+		dice[N] = 0;
+		check = 0;
+		l++;
+	    }
+	    else if(check != 5){
+	    	dice[N] = 0;
+		check = 0;
+		l++;
+	    }
+	    printf("%d回目\n",l);
+	}
+}
